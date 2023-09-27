@@ -1,4 +1,4 @@
-<h2>ManagedToDos - A ManagedModels for CoreData Example
+<h2>ManagedToDos - A ManagedModels Example
   <img src="https://zeezide.com/img/managedmodels/ManagedModelsApp128.png"
        align="right" width="64" height="64" />
 </h2>
