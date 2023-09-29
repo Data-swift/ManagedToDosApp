@@ -14,13 +14,12 @@ import ManagedModels
 @Model
 final class ToDoList: NSManagedObject {
     
-    var title : String
-    var toDos : Set<ToDo> // currently can't use `[ ToDo ]` here.
-        
+    var title = ""
+    var toDos = [ ToDo ]()
+
     convenience init(title: String) {
         self.init()
         self.title = title
-        self.toDos = []
     }
     
     var hasOverdueItems : Bool { toDos.contains { $0.isOverDue && !$0.isDone } }
