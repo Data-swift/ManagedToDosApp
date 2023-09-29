@@ -53,14 +53,13 @@ struct ToDoEditor: View {
             
             if !toDo.isDone {
                 Picker("Priority", selection: $toDo.priority) {
-                    ForEach(1...5, id: \.self) { priority in
+                    ForEach(ToDo.Priority.allCases, id: \.self) { priority in
                         switch priority {
-                            case 1: Text("Very low")
-                            case 2: Text("Low")
-                            case 3: Text("Medium")
-                            case 4: Text("High")
-                            case 5: Text("Very High")
-                            default: Text("\(priority)")
+                            case .veryLow  : Text("Very low")
+                            case .low      : Text("Low")
+                            case .medium   : Text("Medium")
+                            case .high     : Text("High")
+                            case .veryHigh : Text("Very High")
                         }
                     }
                 }

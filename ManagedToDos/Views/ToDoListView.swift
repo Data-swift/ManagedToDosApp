@@ -47,7 +47,7 @@ struct ToDoListView: View {
     // MARK: - Actions
     
     private func addItem() {
-        let toDo = ToDo(list: toDoList, title: "", priority: 3)
+        let toDo = ToDo(list: toDoList, title: "", priority: .medium)
         navigationPath.append(toDo)
         try? viewContext.save()
     }
