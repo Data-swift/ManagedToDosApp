@@ -31,7 +31,7 @@ enum PreviewData {
             // The insert is not even necessary, done by init
             ctx.insert(ToDo(list: list, title: "Apples"))
             ctx.insert(ToDo(list: list, title: "Oranges"))
-            ctx.insert(ToDo(list: list, title: "Juice", priority: 4))
+            ctx.insert(ToDo(list: list, title: "Juice", priority: .high))
         }
         do {
             let list = ToDoList(title: "To-Do's")
@@ -41,7 +41,7 @@ enum PreviewData {
             ctx.insert(ToDo(list: list, title: "Wash 🚗",
                             due: Date().advanced(by: 7200)))
             ctx.insert(ToDo(list: list, title: "Rebuild SwiftData",
-                            priority: 2,
+                            priority: .low,
                             due: Date().advanced(by: -7200)))
             ctx.insert(ToDo(list: list, title: "Do Groceries"))
         }

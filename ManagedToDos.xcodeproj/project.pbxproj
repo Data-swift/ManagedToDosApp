@@ -38,6 +38,7 @@
 		E8548E8C2AC45EDD00809E08 /* ToDoEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoEditor.swift; sourceTree = "<group>"; };
 		E8548E8D2AC45EDD00809E08 /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		E8548E8E2AC45EDD00809E08 /* ToDoListsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListsView.swift; sourceTree = "<group>"; };
+		E8F59F782AC6158700E01163 /* ManagedToDos.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ManagedToDos.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		E8548E592AC454F000809E08 = {
 			isa = PBXGroup;
 			children = (
+				E8F59F782AC6158700E01163 /* ManagedToDos.xctestplan */,
 				E8548E7B2AC455D500809E08 /* README.md */,
 				E8548E642AC454F000809E08 /* ManagedToDos */,
 				E8548E632AC454F000809E08 /* Products */,
@@ -425,7 +427,7 @@
 			repositoryURL = "git@github.com:Data-swift/ManagedModels.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.2;
+				minimumVersion = 0.6.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

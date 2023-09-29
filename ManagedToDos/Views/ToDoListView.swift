@@ -35,10 +35,10 @@ struct ToDoListView: View {
         _toDos = .init(
             filter: NSPredicate(format: "list = %@", toDoList),
             sort: [
-                SortDescriptor(\ToDo.isDone,   order: .forward),
-                SortDescriptor(\ToDo.priority, order: .reverse),
-                SortDescriptor(\ToDo.due,      order: .forward),
-                SortDescriptor(\ToDo.created,  order: .reverse)
+                .init(\.isDone,   order: .forward),
+                .init(\.priority, order: .reverse),
+                .init(\.due,      order: .forward),
+                .init(\.created,  order: .reverse)
             ],
             animation: .default
         )
@@ -47,7 +47,7 @@ struct ToDoListView: View {
     // MARK: - Actions
     
     private func addItem() {
-        let toDo = ToDo(list: toDoList, title: "", priority: 3)
+        let toDo = ToDo(list: toDoList, title: "", priority: .medium)
         navigationPath.append(toDo)
         try? viewContext.save()
     }

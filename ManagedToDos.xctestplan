@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "AB016975-AF24-4306-B5DC-F5E394956E9D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ManagedToDos.xcodeproj",
+      "identifier" : "E8548E612AC454F000809E08",
+      "name" : "ManagedToDos"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/..\/..\/dev\/Swift\/Data.swift\/ManagedModels",
+        "identifier" : "ManagedModelMacrosTests",
+        "name" : "ManagedModelMacrosTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/..\/..\/dev\/Swift\/Data.swift\/ManagedModels",
+        "identifier" : "ManagedModelTests",
+        "name" : "ManagedModelTests"
+      }
+    }
+  ],
+  "version" : 1
+}

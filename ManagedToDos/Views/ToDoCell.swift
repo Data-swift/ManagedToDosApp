@@ -51,14 +51,14 @@ struct ToDoCell: View {
                     
                     Spacer()
                     
-                    if      toDo.priority == 4 { Text("❗️") }
-                    else if toDo.priority >  4 { Text("‼️") }
+                    if      toDo.priority == .high     { Text("❗️") }
+                    else if toDo.priority >= .veryHigh { Text("‼️") }
                 }
                 
                 if let due = toDo.due {
                     Text("\(due, format: .dateTime)")
                         .font(.footnote)
-                        .foregroundColor(toDo.isOverDue && toDo.priority > 2
+                        .foregroundColor(toDo.isOverDue && toDo.priority > .low
                                          ? .red : nil)
                 }
             }

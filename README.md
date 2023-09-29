@@ -9,6 +9,8 @@
 [ManagedModels](https://github.com/Data-swift/ManagedModels/),
 which adds some SwiftData-like `@Model` support to regular CoreData.
 
+Blog article describing ManagedModels: [`@Model` for CoreData](https://www.alwaysrightinstitute.com/managedmodels/).
+
 
 ### Models
 
@@ -56,6 +58,7 @@ ManagedModels has no other dependencies.
 #### Links
 
 - [ManagedModels](https://github.com/Data-swift/ManagedModels/)
+  - Blog article: [`@Model` for CoreData](https://www.alwaysrightinstitute.com/managedmodels/).
 - Apple:
   - [CoreData](https://developer.apple.com/documentation/coredata)
   - [SwiftData](https://developer.apple.com/documentation/swiftdata)
