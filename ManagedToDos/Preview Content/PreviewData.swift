@@ -49,6 +49,7 @@ enum PreviewData {
         return container
     }()
     
+    @MainActor
     static let firstToDoList : ToDoList? = {
         try! container.mainContext.fetch(ToDoList.fetchRequest()).first
     }()
